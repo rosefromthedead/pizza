@@ -1,0 +1,11 @@
+name = "pizza"
+description = "Minimal blog theme"
+license = "MIT"
+homepage = "https://github.com/rosehuds/pizza"
+min_version = "0.14.0"
+
+[extra]
+
+[author]
+name = "Rose Hudson"
+homepage = "https://blog.krx.sh/about/"
