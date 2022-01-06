@@ -2,6 +2,7 @@
 {% block content %}
     <h1>Posts</h1>
     {% for post in paginator.pages %}
+    {% if not post.extra.hide %}
     <div class="post-preview">
         <div class="post-preview-meta">
             <a href="{{ post.permalink | safe }}">
@@ -13,5 +14,6 @@
         </div>
         <p class="post-preview-summary">{{ post.summary | striptags | safe }}</p>
     </div>
+    {% endif %}
     {% endfor %}
 {% endblock content%}
