@@ -16,4 +16,10 @@
     </div>
     {% endif %}
     {% endfor %}
+    <hr />
+    <div class="prev-next">
+        {% if paginator.previous %}<a href="{{ paginator.previous }}">{% endif %}Previous{% if paginator.previous %}</a>{% endif %}
+        &nbsp;|&nbsp;
+        {% if paginator.next %}<a href="{{ paginator.next }}">{% endif %}Next{% if paginator.next %}</a>{% endif %}
+    </div>
 {% endblock content%}
